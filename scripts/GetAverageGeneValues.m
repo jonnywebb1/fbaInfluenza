@@ -13,7 +13,7 @@ for i = 1 : l(1)
         for j = 1 : length(vals)
             if not(strcmp(BioMartGeneNamein(vals(j)), ""))
                 geneName = BioMartGeneNamein(vals(j));
-                geneIndex = find(contains(datasetGeneList, geneName));
+                geneIndex = contains(datasetGeneList, geneName);
                 totalValue = totalValue + sum(datasetArray(geneIndex));
                 tot = tot+1;
             end
