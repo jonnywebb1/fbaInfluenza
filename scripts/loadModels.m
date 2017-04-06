@@ -7,3 +7,4 @@ load('recon2.2.mat');
 load('HGNCindexArray.mat');
 load('HGNCarray');
 load('GSE49840Values');
+load('GSE49840NormalisedValues');

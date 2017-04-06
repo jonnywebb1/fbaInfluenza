@@ -89,9 +89,9 @@ end
 [v, vmax, vmin, fmax, fmin] = flux_balance(fbarecon,true);
 
 % objective functions number M is 2
-f_out(1) = fbarecon.f' * v; % Biomass
-f_out(2) = fmax; % max of the 2nd objective
-v1 = vmax;
+f_out(1) = fbarecon.c' * v; % Biomass
+f_out(2) = fmin; % min of the 2nd objective
+v1 = vmin;
 
 format longG; format compact;
 f_out
