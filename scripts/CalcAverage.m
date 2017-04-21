@@ -1,6 +1,5 @@
 function [ AvgArray ] = CalcAverage( matrixIn )
-%UNTITLED5 Summary of this function goes here
-%   Detailed explanation goes here
+%Takes in matrix and calculates the average of each row
 
 [m,n] = size(matrixIn);
 

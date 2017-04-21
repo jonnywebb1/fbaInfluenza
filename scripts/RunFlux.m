@@ -24,3 +24,5 @@ for field = fieldnames(GSE49840NormalisedValues)'
       GSE49840FluxResults.(field{1}).(subfield{1}) = evaluate_objective(x,M,V,fbarecon,genes,reaction_expression,pos_genes_in_react_expr,ixs_geni_sorted_by_length);;
   end
 end
+
+clearvars M field subfield x V;
