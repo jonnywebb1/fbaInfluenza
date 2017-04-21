@@ -13,3 +13,6 @@ for field = fieldnames(GSE49840)'
      GSE49840Values.(field{1}).(subfield{1}) = CalcAverage(GSE49840.(field{1}).(subfield{1}));
   end
 end
+
+cd('C:\Users\Jonny\Docs\Uni Stuff\Project\fbaInfluenza\models');
+save('GSE49840Values', 'GSE49840Values');

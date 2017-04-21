@@ -1,3 +1,6 @@
+cd('C:\Users\Jonny\Docs\Uni Stuff\Project\fbaInfluenza');
+addpath(genpath('C:\Users\Jonny\Docs\Uni Stuff\Project\fbaInfluenza'));
+
 AllFluxes = zeros(7785, 16); %matrix for all
 FluxesByVirus = struct; % 4*7785 matrix for each virus
 
@@ -13,3 +16,5 @@ for field = fieldnames(GSE49840FluxResults)'
       x = x + 1;
   end
 end
+cd('C:\Users\Jonny\Docs\Uni Stuff\Project\fbaInfluenza\models');
+save('fluxes', 'AllFluxes', 'FluxesByVirus');
