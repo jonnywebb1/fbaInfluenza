@@ -1,0 +1,13 @@
+gpClient = GenePatternServer('http://genepattern.broadinstitute.org/gp/','jonnywebb1', 'Mboro123');
+params = getMethodParameters(gpClient,'urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00042:5');
+params.GEO_accession = 'GSE49840';
+params.GEO_SOFT_file = '';
+params.data_column_name = 'VALUE';
+params.output_filename = '<GEO.accession><GEO.SOFT.file_basename>';
+params.ftp_proxy_server = '';
+params.ftp_proxy_username = '';
+params.ftp_proxy_password = '';
+params.http_proxy_server = '';
+params.http_proxy_username = '';
+params.http_proxy_password = '';
+results = runAnalysis(gpClient,'GEOImporter', params, 'urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00042:5');
